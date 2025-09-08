@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Individu 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="#" method="post">
+            
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="kata-sandi">Kata Sandi:</label>
+            <input type="password" id="kata-sandi" name="kata-sandi" required>
+            
+            <label for="pesan">Pesan Anda:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            
+            <p>Pilih Jenis Kelamin:</p>
+            <div class="radio-group">
+                <input type="radio" id="pria" name="jenis-kelamin" value="pria" required>
+                <label for="pria">Pria</label>
+                <input type="radio" id="wanita" name="jenis-kelamin" value="wanita">
+                <label for="wanita">Wanita</label>
+            </div>
+            
+            <p>Pilih Hobi Anda (boleh lebih dari satu):</p>
+            <div class="checkbox-group">
+                <input type="checkbox" id="membaca" name="hobi[]" value="membaca">
+                <label for="membaca">Membaca</label>
+                <input type="checkbox" id="olahraga" name="hobi[]" value="olahraga">
+                <label for="olahraga">Olahraga</label>
+                <input type="checkbox" id="menulis" name="hobi[]" value="menulis">
+                <label for="menulis">Menulis</label>
+            </div>
+
+            <label for="kota">Pilih Kota Asal:</label>
+            <select id="kota" name="kota" required>
+                <option value="" disabled selected>Pilih kota...</option>
+                <option value="medan">Medan</option>
+                <option value="padang">Padang</option>
+                <option value="banda aceh">Banda Aceh</option>
+                <option value="pekanbaru">Pekabaru</option>
+                <option value="Lambung">Lampung</option>
+                <option value="batam">Batam</option>
+                <option value="palembang">Palembang</option>
+                <option value="jambi">Jambi</option>
+                <option value="bangka belitung">Bangka Belitung</option>
+                <option value="bengkulu">Bengkulu</option>
+            </select>
+            
+            <button type="submit">Kirim Formulir</button>
+            <br>
+            <br>
+            <button type="reset">Reset</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>
